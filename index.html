@@ -16,25 +16,28 @@
         <h1>
             <a href="#">Meu Portfolio</a>
         </h1>
-        <ul>
-            <li>
-                <a href="">Sobre Mim</a>   
-            </li>
-            <li>
-                <a href="">Habilidade</a>   
-            </li>
-            <li>
-                <a href="">Meus Projetos</a>   
-            </li>
-            <li>
-                <a href="">Contato</a>   
-            </li>
-        </ul>
+        <nav>
+            <span id="icon-menu">&#9776</span>
+            <ul id="menu">
+                <li>
+                    <a href="#about-me">Sobre Mim</a>   
+                </li>
+                <li>
+                    <a href="#ability">Habilidades</a>   
+                </li>
+                <li>
+                    <a href="#my-projects">Meus Projetos</a>   
+                </li>
+                <li>
+                    <a href="#contacts">Contato</a>   
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <div class="about-me">
-            <h2 class="topico"> Sobre Mim</h2>
+        <div id="about-me">
+            <h2 class="topico">Sobre Mim</h2>
             <div class="apresentation">
                 <div class="identification">
                     <img src="./imagens/Roberto.jpg" alt="Minha imagem" width="150px">
@@ -43,14 +46,19 @@
                         <h2>Sou o Roberto Barbosa de Melo Júnior</h2>
                         <h2>Desenvolvedor Front-End</h2>
                     </div>
-
                 </div>
                 <div class="pages">
                     <button>
-                        <a href="https://github.com/RobertoBMJunior" target="_blank">GitHub</a>
+                        <a href="https://github.com/RobertoBMJunior" target="_blank">
+                            <box-icon type='logo' name='github'></box-icon>
+                            <span>Github</span>
+                        </a>
                     </button>
                     <button>
-                        <a href="https://www.linkedin.com/in/roberto-j%C3%BAnior-944551184/" target="_blank">Linkedin</a>
+                        <a href="https://www.linkedin.com/in/roberto-j%C3%BAnior-944551184/" target="_blank">
+                            <box-icon type='logo' name='linkedin-square'></box-icon>
+                            <span>Linkedin</span>
+                        </a>
                     </button> 
                 </div>
             </div>
@@ -80,7 +88,7 @@
             </div>
         </div>
 
-        <div id="Habilidades">
+        <div id="ability">
             <h2 class="topico">Habilidades</h2>
             <ul class="list-habi">
                 <li class="habi">
@@ -112,7 +120,7 @@
         </div>
 
 
-        <div class="projects">
+        <div id="my-projects">
                 <h2 class="topico">Meus Projetos</h2>
                 <div class="list-proj"> 
                     <div class="proj">
@@ -224,22 +232,37 @@
                     </span>
                 </button>
                 
-           
-        </div>
-
-        
-
-        <div id="Contato">
-            <h2 class="topico">Contato</h2>
-            <div>
-                <div>Email: robertojuniorazul@gmail.com</div>
-                <div>Celular/whatsapp: (61) 99974-3703</div>
-                <div>Linkedin: <a href="">Clique aqui</a></div>
-                <div>GitHub: <a href="">Clique aqui</a></div>
-            </div>
         </div>
     </main>
 
+    <footer>
+        <div id="contacts">
+            <h2>Contato</h2>
+            <div class="list-contacts">
+                <div class="contact">
+                    <box-icon type='solid' name='envelope'></box-icon>
+                    <span>
+                        Email: robertojuniorazul@gmail.com
+                    </span>
+                </div>
+                <div class="contact">
+                    <box-icon name='whatsapp' type='logo' ></box-icon>
+                    <span>
+                        Celular/Whatsapp: (61) 99974-3703
+                    </span>
+                </div>
+                <div class="contact">
+                    <box-icon type='logo' name='linkedin-square'></box-icon>
+                    <span>
+                        Linkedin: <a href="https://www.linkedin.com/in/roberto-j%C3%BAnior-944551184/" target="_blank">Clique Aqui</a>
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
