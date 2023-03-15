@@ -17,7 +17,7 @@
             <a href="#">Meu Portfolio</a>
         </h1>
         <nav>
-            <span id="icon-menu">&#9776</span>
+            <span id="icon-menu" title="Mostrar/Ocultar Menu">&#9776</span>
             <ul id="menu">
                 <li>
                     <a href="#about-me">Sobre Mim</a>   
@@ -36,7 +36,7 @@
     </header>
 
     <main>
-        <div id="about-me">
+        <section id="about-me">
             <h2 class="topico">Sobre Mim</h2>
             <div class="apresentation">
                 <div class="identification">
@@ -86,9 +86,9 @@
                 </span>
 
             </div>
-        </div>
+        </section>
 
-        <div id="ability">
+        <section id="ability">
             <h2 class="topico">Habilidades</h2>
             <ul class="list-habi">
                 <li class="habi">
@@ -117,18 +117,32 @@
                 </li>
             </ul>
 
-        </div>
+        </section>
 
 
-        <div id="my-projects">
+        <section id="my-projects">
                 <h2 class="topico">Meus Projetos</h2>
                 <div class="list-proj"> 
                     <div class="proj">
                         <a href="">
-                            <img src="./imagens/igniteTimer.PNG" alt="">
+                            <img src="./imagens/todo-list.PNG" alt="Lista de tarefas">
+                        </a>
+                        <h3>To Do List (Lista de Tarefas)</h3>
+                        <h4>Este é um projeto feito em React com TypeScript. Os dados da aplicação ficam salvos no LocalStorage do navegador.</h4>
+                        <button>
+                            <a href="https://robertobmjunior.github.io/ToDo-List/" target="_blank">Visualizar Projeto</a>
+                        </button>
+                        <button>
+                            <a href="https://github.com/RobertoBMJunior/ToDo-List" target="_blank">Ver Repositório</a>
+                        </button>
+                    </div>
+
+                    <div class="proj">
+                        <a href="">
+                            <img src="./imagens/igniteTimer.PNG" alt="Contagem Regressiva">
                         </a>
                         <h3>Contagem Regressiva</h3>
-                        <h4>Este é um projeto feito em React com Typescript. Foram usadas as bibliotecas Styled Components, React Router Dom, React Hook Form, etc.</h4>
+                        <h4>Este é um projeto feito em React com TypeScript. Foram usadas as bibliotecas Styled Components, React Router Dom, React Hook Form, etc.</h4>
                         <button>
                             <a href="https://robertobmjunior.github.io/Ignite-Timer/" target="_blank">Visualizar Projeto</a>
                         </button>
@@ -139,87 +153,60 @@
 
                     <div class="proj">
                         <a href="">
-                            <img src="./imagens/igniteTimer.PNG" alt="">
+                            <img src="./imagens/Ignite-feed-foto.PNG" alt="Front-end de uma rede social">
                         </a>
-                        <h3>Contagem Regressiva</h3>
-                        <h4>Este é um projeto feito em React com Typescript. Foram usadas as bibliotecas Styled Components, React Router Dom, React Hook Form, etc.</h4>
+                        <h3>Ignite Feed</h3>
+                        <h4>Este é um projeto simples feito em React com TypeScript que simula o front-end de uma rede social.</h4>
                         <button>
-                            <a href="https://robertobmjunior.github.io/Ignite-Timer/" target="_blank">Visualizar Projeto</a>
+                            <a href="https://robertobmjunior.github.io/Ignite-Feed/" target="_blank">Visualizar Projeto</a>
                         </button>
                         <button>
-                            <a href="https://github.com/RobertoBMJunior/Ignite-Timer" target="_blank">Ver Repositório</a>
+                            <a href="https://github.com/RobertoBMJunior/Ignite-Feed" target="_blank">Ver Repositório</a>
                         </button>
                     </div>
 
                     <div class="proj">
                         <a href="">
-                            <img src="./imagens/igniteTimer.PNG" alt="">
+                            <img src="./imagens/Formulario_de_inscricao.PNG" alt="Formulário de inscrição">
                         </a>
-                        <h3>Contagem Regressiva</h3>
-                        <h4>Este é um projeto feito em React com Typescript. Foram usadas as bibliotecas Styled Components, React Router Dom, React Hook Form, etc.</h4>
+                        <h3>Formulário de Inscrição (desktop)</h3>
+                        <h4>Este é um projeto feito com JavaScript puro.</h4>
                         <button>
-                            <a href="https://robertobmjunior.github.io/Ignite-Timer/" target="_blank">Visualizar Projeto</a>
+                            <a href="https://robertobmjunior.github.io/Formulario_Inscricao/" target="_blank">Visualizar Projeto</a>
                         </button>
                         <button>
-                            <a href="https://github.com/RobertoBMJunior/Ignite-Timer" target="_blank">Ver Repositório</a>
+                            <a href="https://github.com/RobertoBMJunior/Formulario_Inscricao/tree/main" target="_blank">Ver Repositório</a>
                         </button>
                     </div>
 
                     <div class="proj">
                         <a href="">
-                            <img src="./imagens/igniteTimer.PNG" alt="">
+                            <img src="./imagens/Calculadora de IMC.PNG" alt="Menu lateral">
                         </a>
-                        <h3>Contagem Regressiva</h3>
-                        <h4>Este é um projeto feito em React com Typescript. Foram usadas as bibliotecas Styled Components, React Router Dom, React Hook Form, etc.</h4>
+                        <h3>Calculadora de IMC</h3>
+                        <h4>Este é um projeto de uma calculadora de índice de massa corporal, implementada com HTML, CSS e JavaScript.</h4>
                         <button>
-                            <a href="https://robertobmjunior.github.io/Ignite-Timer/" target="_blank">Visualizar Projeto</a>
+                            <a href="https://robertobmjunior.github.io/calculadora_imc/" target="_blank">Visualizar Projeto</a>
                         </button>
                         <button>
-                            <a href="https://github.com/RobertoBMJunior/Ignite-Timer" target="_blank">Ver Repositório</a>
+                            <a href="https://github.com/RobertoBMJunior/calculadora_imc" target="_blank">Ver Repositório</a>
                         </button>
                     </div>
 
                     <div class="proj">
                         <a href="">
-                            <img src="./imagens/igniteTimer.PNG" alt="">
+                            <img src="./imagens/Sidebar menu.PNG" alt="Menu lateral">
                         </a>
-                        <h3>Contagem Regressiva</h3>
-                        <h4>Este é um projeto feito em React com Typescript. Foram usadas as bibliotecas Styled Components, React Router Dom, React Hook Form, etc.</h4>
+                        <h3>Sidebar Menu</h3>
+                        <h4>É um menu lateral feito com HTML, CSS e JavaScript que tem disponível as opções "modo escuro" e "modo claro".</h4>
                         <button>
-                            <a href="https://robertobmjunior.github.io/Ignite-Timer/" target="_blank">Visualizar Projeto</a>
+                            <a href="https://robertobmjunior.github.io/Sidebar_menu/" target="_blank">Visualizar Projeto</a>
                         </button>
                         <button>
-                            <a href="https://github.com/RobertoBMJunior/Ignite-Timer" target="_blank">Ver Repositório</a>
+                            <a href="https://github.com/RobertoBMJunior/Sidebar_menu" target="_blank">Ver Repositório</a>
                         </button>
                     </div>
 
-                    <div class="proj">
-                        <a href="">
-                            <img src="./imagens/igniteTimer.PNG" alt="">
-                        </a>
-                        <h3>Contagem Regressiva</h3>
-                        <h4>Este é um projeto feito em React com Typescript. Foram usadas as bibliotecas Styled Components, React Router Dom, React Hook Form, etc.</h4>
-                        <button>
-                            <a href="https://robertobmjunior.github.io/Ignite-Timer/" target="_blank">Visualizar Projeto</a>
-                        </button>
-                        <button>
-                            <a href="https://github.com/RobertoBMJunior/Ignite-Timer" target="_blank">Ver Repositório</a>
-                        </button>
-                    </div>
-
-                    <div class="proj">
-                        <a href="">
-                            <img src="./imagens/igniteTimer.PNG" alt="">
-                        </a>
-                        <h3>Contagem Regressiva</h3>
-                        <h4>Este é um projeto feito em React com Typescript. Foram usadas as bibliotecas Styled Components, React Router Dom, React Hook Form, etc.</h4>
-                        <button>
-                            <a href="https://robertobmjunior.github.io/Ignite-Timer/" target="_blank">Visualizar Projeto</a>
-                        </button>
-                        <button>
-                            <a href="https://github.com/RobertoBMJunior/Ignite-Timer" target="_blank">Ver Repositório</a>
-                        </button>
-                    </div>
                     
                 </div>
 
@@ -232,11 +219,11 @@
                     </span>
                 </button>
                 
-        </div>
+        </section>
     </main>
 
     <footer>
-        <div id="contacts">
+        <section id="contacts">
             <h2>Contato</h2>
             <div class="list-contacts">
                 <div class="contact">
@@ -259,7 +246,7 @@
                     
                 </div>
             </div>
-        </div>
+        </section>
     </footer>
 
     <script src="./script.js"></script>

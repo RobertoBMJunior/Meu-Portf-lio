@@ -1,10 +1,12 @@
 :root{
-    --dark-blue: #0a2540;
+    --white: white;
+    --white-200: #f6f9fc;
 
-    --white: #f6f9fc;
     --gray: #6b7280;
     --gray-200: #e5e7eb;
+
     --blue: #0ea5e9;
+    --dark-blue: #0a2540;
 }
 
 *{
@@ -19,10 +21,10 @@
 
 body{
     color: var(--dark-blue);
-    background-color: var(--white);
+    background-color: var(--white-200);
     
     font-size: 1rem;
-    padding-top: 100px;
+    padding-top: 6.25rem;
 }
 
 /* -----------Header----------------------- */
@@ -30,7 +32,7 @@ body{
 
 header{
     width: 100%;
-    height: 100px;
+    height: 6.25rem;
 
     position: fixed;
     left: 0;
@@ -44,12 +46,12 @@ header{
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 200px;
+    padding: 0 12.5rem;
     /* border-bottom: 2px solid var(--gray); */
 }
 
 #icon-menu{
-    font-size: 32px;
+    font-size: 2rem;
     display: none;
     cursor: pointer;
 }
@@ -60,7 +62,7 @@ header ul{
 }
 
 header ul li{
-    padding: 10px 0;
+    padding: 0.625rem 0;
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
 }
@@ -76,7 +78,7 @@ a{
 /* -----------Sobre mim----------------------- */
 
 main{
-    padding: 20px 200px;
+    padding: 1.25rem 12.5rem;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -88,9 +90,9 @@ button{
 }
 
 .topico{
-    height: 40px;
+    height: 2.5rem;
     
-    font-size: 30px;
+    font-size: 1.875rem;
 
     margin-bottom: 1rem;
 
@@ -127,9 +129,9 @@ main .apresentation{
 
 
 .pages button{
-    width: 100px;
+    width: 6.25rem;
 
-    padding: 10px;
+    padding: 0.625rem;
     background-color: transparent;
     border-radius: 8px;
     border: 2px solid var(--blue)
@@ -150,7 +152,7 @@ main .apresentation{
 .information-about-me{
     display: flex;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.6;
 }
 
@@ -158,7 +160,6 @@ main .apresentation{
 
 .list-habi{
     width: 100%;
-    /* height: 100px; */
 
     display: flex;
     align-items: center;
@@ -168,7 +169,7 @@ main .apresentation{
 }
 
 .habi{
-    width: 80px;
+    width: 5rem;
 
     display: flex;
     align-items: center;
@@ -193,13 +194,13 @@ main .apresentation{
 
     flex-wrap: wrap;
 
-    height: 432px;
+    height: 27rem;
     overflow: hidden;
 }
 
 .proj{
-    width: 300px;
-    height: 400px;
+    width: 18.75rem;
+    height: 25rem;
 
     display: flex;
     flex-direction: column;
@@ -212,7 +213,7 @@ main .apresentation{
 }
 
 .proj button{
-    width: 140px;
+    width: 8.75rem;
 
     padding: 5px;
     background-color: transparent;
@@ -227,8 +228,8 @@ main .apresentation{
 
 .proj img{
     border-radius: 0;
-    height: 200px;
-    width: 300px;
+    height: 12.5rem;
+    width: 18.75rem;
 }
 
 .proj img:hover{
@@ -238,12 +239,12 @@ main .apresentation{
 
 #read-more{
     width: 100%;
-    padding: 10px;
+    padding: 0.625rem;
     border: none;
 
     border-radius: 8px;
 
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
 
     display: flex;
@@ -261,7 +262,6 @@ main .apresentation{
 
 .material-symbols-outlined{
     position: relative;
-    /* top: -5px; */
 
     animation-name: up-down;
     animation-duration: 1.5s;
@@ -278,7 +278,7 @@ main .apresentation{
     }
 
     50%{
-        top: 8px;
+        top: 0.5rem;
     }
 
     100%{
@@ -290,7 +290,7 @@ main .apresentation{
 /* -----------Contact----------------------- */
 footer{
     width: 100%;
-    padding: 16px 200px;
+    padding: 1rem 12.5rem;
     
     color: var(--gray-200);
 
@@ -304,30 +304,37 @@ footer{
 }
 
 #contacts h2{
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .list-contacts{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .contact{
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 /*------------- Responsivo ---------*/
+.display{
+    display: flex !important;
+}
 
 @media only screen and (max-width: 1016px) {
     header{
         padding: 0 1.5rem;
     }
 
+    /* #menu{
+        display: flex;
+    } */
+
     main{
-        padding: 20px 1.5rem;
+        padding: 1.25rem 1.5rem;
     }
 
     .pages{
@@ -339,7 +346,7 @@ footer{
         margin-right: auto;
         justify-content: center;
         gap: 3rem;
-        width: 700px;
+        width: 43.75rem;
     }
 
     .proj{
@@ -347,7 +354,7 @@ footer{
     }
 
     footer{
-        padding: 16px 1.5rem;
+        padding: 1rem 1.5rem;
     }
 
     #read-more{
@@ -368,21 +375,21 @@ footer{
     }
     
     #menu{
-        padding: 10px;
-        /* margin-top: -29px; */
+        padding: 0.625rem;
+    
         border-bottom-left-radius: 8px;
 
-        background-color: inherit;
-        /* background: rgba(246, 249, 252, 0.4); */
+        background-color: var(--white);
         border: 1px solid var(--dark-blue);
 
-        /* background-color: rgba(46,66,144,0.8); */
         color: var(--dark-blue);
-        top: 100px;
+        top: 6.25rem;
         right: 0px;
         position: absolute;
         flex-direction: column;
         gap: 0rem;
+
+        display: none;
     }
 
     #menu li{
@@ -394,7 +401,7 @@ footer{
     }
 
     .list-proj{
-        width: 400px;
+        width: 25rem;
     }
 
 }
@@ -417,12 +424,12 @@ footer{
 
 @media only screen and (max-width: 448px) {
     .list-proj{
-        width: 312px;
+        width: 19.5rem;
     }
 
     .proj img{
         border-radius: 0;
-        height: 150px;
-        width: 200px;
+        height: 9.375rem;
+        width: 12.5rem;
     }
 }

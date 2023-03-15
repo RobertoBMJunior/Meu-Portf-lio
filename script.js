@@ -1,3 +1,5 @@
+// --------- Botão Mostrar mais/menos projetos ------
+
 const btn_read_more = document.querySelector('#read-more')
 const list_projects = document.querySelector('.list-proj')
 
@@ -24,6 +26,29 @@ btn_read_more.addEventListener('click',()=>{
     `
     
 })
+
+// ----------------Botão menu-------------
+
+
+btn_menu = document.querySelector('#icon-menu');
+menu = document.querySelector('#menu');
+
+btn_menu.addEventListener('click',() => {
+//   var windowWidth = window.innerWidth;
+//   var windowHeight = window.innerHeight;
+
+//   var screenWidth = screen.width;
+//   var screenHeight = screen.height;
+
+//  if(windowWidth < 717) {
+//     menu.style.display = 'flex';
+//   }
+  menu.classList.toggle('display');
+
+})
+
+
+
 
 // --------------------Âncora de índice de conteudo---------------------
 // Aqui nós estaremos realizando o scroll da página para 100px abaixo
