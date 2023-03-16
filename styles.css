@@ -134,7 +134,8 @@ main .apresentation{
     padding: 0.625rem;
     background-color: transparent;
     border-radius: 8px;
-    border: 2px solid var(--blue)
+    border: 2px solid var(--blue);
+    transition: scale 0.3s;
 }
 
 .pages button:hover{
@@ -176,6 +177,7 @@ main .apresentation{
     justify-content: center;
     gap: 1rem;     
     flex-direction: column;
+    transition: scale 0.3s;
 
 }
 
@@ -219,6 +221,7 @@ main .apresentation{
     background-color: transparent;
     border-radius: 8px;
     border: 2px solid var(--blue);
+    transition: scale 0.3s;
 }
 
 .proj button:hover{
@@ -230,6 +233,9 @@ main .apresentation{
     border-radius: 0;
     height: 12.5rem;
     width: 18.75rem;
+    border-radius: 8px;
+    /* border: 2px solid var(--blue); */
+    transition: scale 0.5s;
 }
 
 .proj img:hover{
